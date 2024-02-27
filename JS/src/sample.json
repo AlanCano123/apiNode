@@ -1,0 +1,123 @@
+{
+  "PaymentAccounts": [
+    {
+      "AccountCode": "AC123",
+      "Comprobantes": [
+        {
+          "TipoComprobante": "Factura",
+          "NumeroLegal": "F123",
+          "FechaVencimiento": "2024-02-20",
+          "FechaEmision": "2024-01-20",
+          "Moneda": "USD",
+          "ImporteEmision": 100,
+          "SaldoPendiente": 50,
+          "DiasDeGracia": 10,
+          "MarcaReclamo": false,
+          "MotivoReclamo": null,
+          "IdComprobante": "C123"
+        },
+        {
+          "TipoComprobante": "Recibo",
+          "NumeroLegal": "R124",
+          "FechaVencimiento": "2024-03-10",
+          "FechaEmision": "2024-02-10",
+          "Moneda": "EUR",
+          "ImporteEmision": 150,
+          "SaldoPendiente": 0,
+          "DiasDeGracia": 5,
+          "MarcaReclamo": true,
+          "MotivoReclamo": "Devolución",
+          "IdComprobante": "C124"
+        },
+        {
+          "TipoComprobante": "Recibo",
+          "NumeroLegal": "R124",
+          "FechaVencimiento": "2024-03-10",
+          "FechaEmision": "2024-02-10",
+          "Moneda": "EUR",
+          "ImporteEmision": 150,
+          "SaldoPendiente": 0,
+          "DiasDeGracia": 5,
+          "MarcaReclamo": true,
+          "MotivoReclamo": "Devolución",
+          "IdComprobante": "C124"
+        }
+      ]
+    },
+    {
+      "AccountCode": "AC125",
+      "Comprobantes": [
+        {
+          "TipoComprobante": "Factura",
+          "NumeroLegal": "F125",
+          "FechaVencimiento": "2024-02-25",
+          "FechaEmision": "2024-01-25",
+          "Moneda": "USD",
+          "ImporteEmision": 120,
+          "SaldoPendiente": 120,
+          "DiasDeGracia": 15,
+          "MarcaReclamo": false,
+          "MotivoReclamo": null,
+          "IdComprobante": "C125"
+        },
+        {
+          "TipoComprobante": "Recibo",
+          "NumeroLegal": "R126",
+          "FechaVencimiento": "2024-03-15",
+          "FechaEmision": "2024-02-15",
+          "Moneda": "EUR",
+          "ImporteEmision": 200,
+          "SaldoPendiente": 50,
+          "DiasDeGracia": 8,
+          "MarcaReclamo": true,
+          "MotivoReclamo": "Devolución",
+          "IdComprobante": "C126"
+        }
+      ]
+    },
+    {
+      "AccountCode": "AC127",
+      "Comprobantes": [
+        {
+          "TipoComprobante": "Factura",
+          "NumeroLegal": "F127",
+          "FechaVencimiento": "2024-03-01",
+          "FechaEmision": "2024-01-30",
+          "Moneda": "USD",
+          "ImporteEmision": 80,
+          "SaldoPendiente": 30,
+          "DiasDeGracia": 12,
+          "MarcaReclamo": false,
+          "MotivoReclamo": null,
+          "IdComprobante": "C127"
+        },
+        {
+          "TipoComprobante": "Recibo",
+          "NumeroLegal": "R124",
+          "FechaVencimiento": "2024-03-10",
+          "FechaEmision": "2024-02-10",
+          "Moneda": "EUR",
+          "ImporteEmision": 150,
+          "SaldoPendiente": 0,
+          "DiasDeGracia": 5,
+          "MarcaReclamo": true,
+          "MotivoReclamo": "Devolución",
+          "IdComprobante": "C124"
+        },
+        {
+          "TipoComprobante": "Recibo",
+          "NumeroLegal": "R124",
+          "FechaVencimiento": "2024-03-10",
+          "FechaEmision": "2024-02-10",
+          "Moneda": "EUR",
+          "ImporteEmision": 150,
+          "SaldoPendiente": 0,
+          "DiasDeGracia": 5,
+          "MarcaReclamo": true,
+          "MotivoReclamo": "Devolución",
+          "IdComprobante": "C124"
+        }
+      ]
+    }
+  ]
+}
