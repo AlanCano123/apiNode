@@ -116,15 +116,12 @@ const paymentAccounts = [
             }
         ]
     }
-];// Objeto para mantener el registro de BeginRowNum por cada PaymentAccount
-const beginRowNumRegistry = {};
+];
+
 
 // Ruta para buscar las deudas de la cuenta de pago
 router.post('/buscar-deudas', (req, res) => {
-    const { PaymentAccount, FechaDesde, FechaHasta, FetchRowNum } = req.body;
-    
-    // Obtener el BeginRowNum de la sesión del usuario o inicializarlo en 0
-    const BeginRowNum = beginRowNumRegistry[PaymentAccount] || 0;
+    const { PaymentAccount, BeginRowNum, FetchRowNum } = req.body;
 
     // Buscar la cuenta de pago
     const account = paymentAccounts.find(account => account.responsablePago === PaymentAccount);
@@ -138,25 +135,18 @@ router.post('/buscar-deudas', (req, res) => {
         return res.status(404).json({ error: 'La cuenta de pago no tiene deudas' });
     }
 
-    // Obtener las deudas si existen
-    const deudas = account.deudas.slice(BeginRowNum, BeginRowNum + FetchRowNum);
-
-    // Calcular el total de deudas
-    const totalDeudas = account.deudas.length;
-
-    // Actualizar BeginRowNum para la próxima solicitud
-    const nextBeginRowNum = BeginRowNum + deudas.length;
-
-    // Registrar el BeginRowNum para la próxima solicitud
-    beginRowNumRegistry[PaymentAccount] = nextBeginRowNum;
+    // Calcular el índice de inicio para esta solicitud
+    const startIdx = BeginRowNum;
+    
+    // Obtener las deudas solicitadas
+    const deudas = account.deudas.slice(startIdx, startIdx + FetchRowNum);
 
     res.json({
         deudas,
-        totalDeudas,
-        nextBeginRowNum
+        totalRowNum: account.deudas.length,
+        BeginRowNum,
+        FetchRowNum
     });
 });
 
 module.exports = router;
-
-
