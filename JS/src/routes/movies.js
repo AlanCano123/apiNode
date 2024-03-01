@@ -117,8 +117,6 @@ const paymentAccounts = [
         ]
     }
 ];
-
-
 // Ruta para buscar las deudas de la cuenta de pago
 router.post('/buscar-deudas', (req, res) => {
     const { PaymentAccount, BeginRowNum, FetchRowNum } = req.body;
@@ -135,18 +133,22 @@ router.post('/buscar-deudas', (req, res) => {
         return res.status(404).json({ error: 'La cuenta de pago no tiene deudas' });
     }
 
+    // Ordenar las deudas por fecha
+    const sortedDeudas = account.deudas.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
+
     // Calcular el índice de inicio para esta solicitud
     const startIdx = BeginRowNum;
     
     // Obtener las deudas solicitadas
-    const deudas = account.deudas.slice(startIdx, startIdx + FetchRowNum);
+    const deudas = sortedDeudas.slice(startIdx, startIdx + FetchRowNum);
 
     res.json({
         deudas,
-        totalRowNum: account.deudas.length,
+        totalRowNum: sortedDeudas.length,
         BeginRowNum,
         FetchRowNum
     });
 });
+
 
 module.exports = router;
