@@ -119,7 +119,7 @@ const paymentAccounts = [
 ];
 // Ruta para buscar las deudas de la cuenta de pago
 router.post('/buscar-deudas', (req, res) => {
-    const { PaymentAccount, BeginRowNum, FetchRowNum } = req.body;
+    const { PaymentAccount, BeginRowNum, FetchRowNum,FechaDesde, FechaHasta } = req.body;
 
     // Buscar la cuenta de pago
     const account = paymentAccounts.find(account => account.responsablePago === PaymentAccount);
@@ -144,7 +144,51 @@ router.post('/buscar-deudas', (req, res) => {
 
     res.json({
         deudas,
-        totalRowNum: sortedDeudas.length,
+        TotalRowNum: sortedDeudas.length,
+        BeginRowNum,
+        FetchRowNum
+    });
+});
+
+// Ruta para buscar las deudas de la cuenta de pago por fecha
+router.post('/buscar-deudas-fechas', (req, res) => {
+    const { PaymentAccount, BeginRowNum, FetchRowNum, FechaDesde, FechaHasta } = req.body;
+
+    // Buscar la cuenta de pago
+    const account = paymentAccounts.find(account => account.responsablePago === PaymentAccount);
+
+    if (!account) {
+        return res.status(404).json({ error: 'Cuenta de pago no encontrada' });
+    }
+
+    // Verificar si la cuenta tiene deudas
+    if (!account.deudas || account.deudas.length === 0) {
+        return res.status(404).json({ error: 'La cuenta de pago no tiene deudas' });
+    }
+
+    // Filtrar las deudas por fecha si se proporcionan FechaDesde y/o FechaHasta
+    let filteredDeudas = account.deudas;
+
+    if (FechaDesde) {
+        filteredDeudas = filteredDeudas.filter(deuda => new Date(deuda.FechaEmision) >= new Date(FechaDesde));
+    }
+
+    if (FechaHasta) {
+        filteredDeudas = filteredDeudas.filter(deuda => new Date(deuda.FechaEmision) <= new Date(FechaHasta));
+    }
+
+    // Ordenar las deudas por fecha
+    filteredDeudas.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
+
+    // Calcular el índice de inicio para esta solicitud
+    const startIdx = BeginRowNum;
+    
+    // Obtener las deudas solicitadas
+    const deudas = filteredDeudas.slice(startIdx, startIdx + FetchRowNum);
+
+    res.json({
+        deudas,
+        TotalRowNum: filteredDeudas.length,
         BeginRowNum,
         FetchRowNum
     });
