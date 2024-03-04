@@ -3,7 +3,7 @@ const router = Router();
 const paymentAccounts = [
     {
         "responsablePago": "1994941113330050",
-        "deudas": [
+        "comprobantes": [
             {
                 "NumeroLegal": "A-123-12345678",
                 "FechaEmision": "2014-01-01",
@@ -14,7 +14,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 1,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "A-321-12545678",
@@ -26,7 +27,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 2,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "A-213-12543678",
@@ -38,7 +40,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 3,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "A-432-21345678",
@@ -50,7 +53,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 4,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -62,7 +66,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 5,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -74,7 +79,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 6,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-123-45678901",
@@ -86,7 +92,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 7,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-234-56789012",
@@ -98,7 +105,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 8,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-345-67890123",
@@ -110,7 +118,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 9,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -122,7 +131,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 10,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-567-89012345",
@@ -134,7 +144,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 11,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-678-90123456",
@@ -146,7 +157,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 12,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-789-01234567",
@@ -158,7 +170,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 13,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-890-12345678",
@@ -170,13 +183,98 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 14,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 15,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 16,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 17,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 18,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 19,
+                "tipoComprobante": null
+            },
+            
+            {
+                "NumeroLegal": "B-890-12345678",
+                "FechaEmision": "2024-11-11",
+                "FechaVencimiento": "2023-01-02",
+                "Moneda": "pesos",
+                "ImporteEmision": 100,
+                "SaldoPendiente": 10,
+                "DiasDeGracia": 3,
+                "MarcaReclamo": "marcaGenerica",
+                "MotivoReclamo": "motivoDel Reclamo",
+                "IdComprobante": 20,
+                "tipoComprobante": null
             }
         ]
     },
     {
         "responsablePago": "1994941119940050",
-        "detalles": [
+        "comprobantes": [
             {
                 "NumeroLegal": "B-456-78901234",
                 "FechaEmision": "2015-02-02",
@@ -187,7 +285,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 1,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -199,7 +298,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 2,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -211,7 +311,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 3,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -223,7 +324,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 4,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-123-45678901",
@@ -235,7 +337,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 5,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-234-56789012",
@@ -247,7 +350,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 6,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-345-67890123",
@@ -259,7 +363,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 7,
+                "tipoComprobante": null
             },
             
             {
@@ -272,7 +377,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 8,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-567-89012345",
@@ -284,7 +390,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 9,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-678-90123456",
@@ -296,7 +403,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 10,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-789-01234567",
@@ -308,7 +416,8 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 11,
+                "tipoComprobante": null
             },
             {
                 "NumeroLegal": "B-890-12345678",
@@ -320,87 +429,100 @@ const paymentAccounts = [
                 "DiasDeGracia": 3,
                 "MarcaReclamo": "marcaGenerica",
                 "MotivoReclamo": "motivoDel Reclamo",
-                "IdComprobante": 1
+                "IdComprobante": 12,
+                "tipoComprobante": null
             }
         ]
     }
 ];
-// Ruta para buscar las deudas de la cuenta de pago
-router.post('/buscar-deudas', (req, res) => {
-    const { PaymentAccount, BeginRowNum, FetchRowNum,FechaDesde, FechaHasta } = req.body;
+// Ruta para buscar las comprobantes de la cuenta de pago
+router.post('/buscar-comprobantes', (req, res) => {
+    const { paymentAccount, datosPaginado } = req.body;
+    const { beginRowNum, fetchRowNum } = datosPaginado;
 
     // Buscar la cuenta de pago
-    const account = paymentAccounts.find(account => account.responsablePago === PaymentAccount);
+    const account = paymentAccounts.find(account => account.responsablePago === paymentAccount);
 
     if (!account) {
         return res.status(404).json({ error: 'Cuenta de pago no encontrada' });
     }
 
-    // Verificar si la cuenta tiene deudas
-    if (!account.deudas || account.deudas.length === 0) {
-        return res.status(404).json({ error: 'La cuenta de pago no tiene deudas' });
+    // Verificar si la cuenta tiene comprobantes
+    if (!account.comprobantes || account.comprobantes.length === 0) {
+        return res.status(404).json({ error: 'La cuenta de pago no tiene comprobantes' });
     }
 
-    // Ordenar las deudas por fecha
-    const sortedDeudas = account.deudas.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
+    // Ordenar las comprobantes por fecha
+    const sortedComprobantes = account.comprobantes.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
 
     // Calcular el índice de inicio para esta solicitud
-    const startIdx = BeginRowNum;
-    
-    // Obtener las deudas solicitadas
-    const deudas = sortedDeudas.slice(startIdx, startIdx + FetchRowNum);
+    const startIdx = beginRowNum;
+
+    // Ajustar fetchRowNum para evitar exceder el límite de comprobantes disponibles
+    const adjustedFetchRowNum = Math.min(fetchRowNum, account.comprobantes.length - startIdx);
+
+    // Obtener las comprobantes solicitadas
+    const comprobantes = sortedComprobantes.slice(startIdx, startIdx + adjustedFetchRowNum);
 
     res.json({
-        deudas,
-        TotalRowNum: sortedDeudas.length,
-        BeginRowNum,
-        FetchRowNum
+        paymentAccount: account.responsablePago,
+        comprobantes,
+        TotalRowNum: account.comprobantes.length,
+        BeginRowNum: beginRowNum,
+        FetchRowNum: adjustedFetchRowNum
     });
 });
 
-// Ruta para buscar las deudas de la cuenta de pago por fecha
-router.post('/buscar-deudas-fechas', (req, res) => {
-    const { PaymentAccount, BeginRowNum, FetchRowNum, FechaDesde, FechaHasta } = req.body;
+
+// Ruta para buscar las comprobantes de la cuenta de pago por fecha
+router.post('/buscar-comprobantes-fechas', (req, res) => {
+    const { paymentAccount, datosPaginado, fechaDesde, fechaHasta } = req.body;
+    const { beginRowNum, fetchRowNum } = datosPaginado;
 
     // Buscar la cuenta de pago
-    const account = paymentAccounts.find(account => account.responsablePago === PaymentAccount);
+    const account = paymentAccounts.find(account => account.responsablePago === paymentAccount);
 
     if (!account) {
         return res.status(404).json({ error: 'Cuenta de pago no encontrada' });
     }
 
-    // Verificar si la cuenta tiene deudas
-    if (!account.deudas || account.deudas.length === 0) {
-        return res.status(404).json({ error: 'La cuenta de pago no tiene deudas' });
+    // Verificar si la cuenta tiene comprobantes
+    if (!account.comprobantes || account.comprobantes.length === 0) {
+        return res.status(404).json({ error: 'La cuenta de pago no tiene comprobantes' });
     }
 
-    // Filtrar las deudas por fecha si se proporcionan FechaDesde y/o FechaHasta
-    let filteredDeudas = account.deudas;
+    // Obtener la cantidad total de comprobantes de la cuenta de pago
+    const totalRowNum = account.comprobantes.length;
 
-    if (FechaDesde) {
-        filteredDeudas = filteredDeudas.filter(deuda => new Date(deuda.FechaEmision) >= new Date(FechaDesde));
+    // Filtrar las comprobantes por fecha si se proporcionan fechaDesde y/o fechaHasta
+    let filteredComprobantes = account.comprobantes;
+
+    if (fechaDesde) {
+        filteredComprobantes = filteredComprobantes.filter(comprobante => new Date(comprobante.FechaEmision) >= new Date(fechaDesde));
     }
 
-    if (FechaHasta) {
-        filteredDeudas = filteredDeudas.filter(deuda => new Date(deuda.FechaEmision) <= new Date(FechaHasta));
+    if (fechaHasta) {
+        filteredComprobantes = filteredComprobantes.filter(comprobante => new Date(comprobante.FechaEmision) <= new Date(fechaHasta));
     }
 
-    // Ordenar las deudas por fecha
-    filteredDeudas.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
+    // Ordenar las comprobantes por fecha
+    filteredComprobantes.sort((a, b) => new Date(a.FechaEmision) - new Date(b.FechaEmision));
 
     // Calcular el índice de inicio para esta solicitud
-    const startIdx = BeginRowNum;
+    const startIdx = beginRowNum;
     
-    // Obtener las deudas solicitadas
-    const deudas = filteredDeudas.slice(startIdx, startIdx + FetchRowNum);
+    // Obtener las comprobantes solicitadas
+    const comprobantes = filteredComprobantes.slice(startIdx, startIdx + fetchRowNum);
 
     res.json({
-        deudas,
-        TotalRowNum: filteredDeudas.length,
-        BeginRowNum,
-        FetchRowNum
+        paymentAccount: account.responsablePago,
+        comprobantes,
+        TotalRowNum: totalRowNum,
+        BeginRowNum: beginRowNum,
+        FetchRowNum: fetchRowNum
     });
 });
+
 
 
 module.exports = router;
