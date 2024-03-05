@@ -467,9 +467,9 @@ router.post('/buscar-comprobantes', (req, res) => {
     res.json({
         paymentAccount: account.responsablePago,
         comprobantes,
-        TotalRowNum: account.comprobantes.length,
+        paginado:{TotalRowNum: account.comprobantes.length,
         BeginRowNum: beginRowNum,
-        FetchRowNum: adjustedFetchRowNum
+        FetchRowNum: adjustedFetchRowNum}
     });
 });
 
@@ -517,9 +517,9 @@ router.post('/buscar-comprobantes-fechas', (req, res) => {
     res.json({
         paymentAccount: account.responsablePago,
         comprobantes,
-        TotalRowNum: totalRowNum,
+        paginado:{TotalRowNum: totalRowNum,
         BeginRowNum: beginRowNum,
-        FetchRowNum: fetchRowNum
+        FetchRowNum: fetchRowNum}
     });
 });
 
