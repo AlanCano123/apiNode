@@ -435,6 +435,34 @@ const paymentAccounts = [
         ]
     }
 ];
+
+
+const paymentsAccounts=[
+    {
+        "paymentAccount": "1994941113330050",
+        "proceso de mora activo": "proceso",
+        "paso mora": "paso",
+        "marca deimos": "marca",
+        "marca no factorable":"marca",
+        "dias de gracia": 1,
+        "adhesión autopago": true,
+        "ciclo facturación":"ciclo",
+        "suscripciones activas":"y"
+            
+    },
+    {
+        "paymentAccount": "1994941119940050",
+        "proceso de mora activo": "proceso",
+        "paso mora": "paso",
+        "marca deimos": "marca",
+        "marca no factorable":"marca",
+        "dias de gracia": 1,
+        "adhesión autopago": true,
+        "ciclo facturación":"ciclo",
+        "suscripciones activas":"y"
+            
+    },
+]
 // Ruta para buscar las comprobantes de la cuenta de pago
 router.post('/buscar-comprobantes', (req, res) => {
     const { paymentAccount, datosPaginado } = req.body;
@@ -523,6 +551,18 @@ router.post('/buscar-comprobantes-fechas', (req, res) => {
     });
 });
 
+router.post('/buscar_payment', (req, res) => {
+    const { paymentAccount, fechaDesde, fechaHasta } = req.body;
 
+    // Buscar la cuenta de pago en el array paymentsAccounts
+    const cuenta = paymentsAccounts.find(account => account.paymentAccount === paymentAccount);
+
+    if (!cuenta) {
+        return res.status(404).json({ error: 'Cuenta de pago no encontrada' });
+    }
+
+    
+    res.json(cuenta);
+});
 
 module.exports = router;
