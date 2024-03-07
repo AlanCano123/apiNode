@@ -12,10 +12,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 1,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "A-321-12545678",
@@ -25,10 +25,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 2,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "A-213-12543678",
@@ -38,10 +38,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 3,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "A-432-21345678",
@@ -51,10 +51,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 4,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -64,10 +64,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 5,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -77,10 +77,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 6,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-123-45678901",
@@ -90,10 +90,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 7,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-234-56789012",
@@ -103,10 +103,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 8,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-345-67890123",
@@ -116,10 +116,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 9,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -129,10 +129,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 10,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-567-89012345",
@@ -142,10 +142,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 11,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-678-90123456",
@@ -155,10 +155,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 12,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-789-01234567",
@@ -168,10 +168,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 13,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-890-12345678",
@@ -181,10 +181,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 14,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -195,10 +195,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 15,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -209,10 +209,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 16,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -223,10 +223,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 17,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -237,10 +237,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 18,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -251,10 +251,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 19,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -265,10 +265,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 20,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             }
         ]
     },
@@ -283,10 +283,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 1,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -296,10 +296,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 2,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-456-78901234",
@@ -309,10 +309,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 3,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-789-12345678",
@@ -322,10 +322,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 4,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-123-45678901",
@@ -335,10 +335,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 5,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-234-56789012",
@@ -348,10 +348,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 6,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-345-67890123",
@@ -361,10 +361,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 7,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             
             {
@@ -375,10 +375,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 8,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-567-89012345",
@@ -388,10 +388,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 9,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-678-90123456",
@@ -401,10 +401,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 10,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-789-01234567",
@@ -414,10 +414,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 11,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             },
             {
                 "NumeroLegal": "B-890-12345678",
@@ -427,10 +427,10 @@ const paymentAccounts = [
                 "ImporteEmision": 100,
                 "SaldoPendiente": 10,
                 "DiasDeGracia": 3,
-                "MarcaReclamo": "marcaGenerica",
+                "MarcaReclamo": "SI",
                 "MotivoReclamo": "motivoDel Reclamo",
                 "IdComprobante": 12,
-                "tipoComprobante": null
+                "tipoComprobante": "FAC"
             }
         ]
     }
@@ -440,26 +440,26 @@ const paymentAccounts = [
 const paymentsAccounts=[
     {
         "paymentAccount": "1994941113330050",
-        "proceso de mora activo": "proceso",
-        "paso mora": "paso",
-        "marca deimos": "marca",
-        "marca no factorable":"marca",
-        "dias de gracia": 1,
-        "adhesión autopago": true,
-        "ciclo facturación":"ciclo",
-        "suscripciones activas":"y"
+        "procesoDeMoraActivo": "procesoUno",
+        "pasoMora":["paso1","paso2","paso3"] ,
+        "marcaDeimos": "marcaUno",
+        "marcaNoFactorable":"marcafacturableUNO",
+        "diasDeGracia": 2,
+        "adhesionAutopago": "NO",
+        "cicloFacturación":3,
+        "suscripcionesActivas":"NO"
             
     },
     {
         "paymentAccount": "1994941119940050",
-        "proceso de mora activo": "proceso",
-        "paso mora": "paso",
-        "marca deimos": "marca",
-        "marca no factorable":"marca",
-        "dias de gracia": 1,
-        "adhesión autopago": true,
-        "ciclo facturación":"ciclo",
-        "suscripciones activas":"y"
+        "procesoDeMoraActivo": "proceso",
+        "pasoMora":["paso1","paso2","paso3"] ,
+        "marcaDeimos": "marca",
+        "marcaNoFactorable":"marcafacturable",
+        "diasDeGracia": 1,
+        "adhesionAutopago": "SI",
+        "cicloFacturación":1,
+        "suscripcionesActivas":"SI"
             
     },
 ]
